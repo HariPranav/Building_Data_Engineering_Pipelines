@@ -1,0 +1,50 @@
+**index.html**
+<html>
+<head><center><h3>Ornament Verification Report </h3></center></head>
+<style>
+
+.orn1
+{
+border: 1px outset blue;
+background-color: lightblue;
+padding-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+
+}
+</style>
+<body>
+
+<form action="{{ url_for("test")}}" method="post">
+
+    <div class="orn1">
+    <label for="ornament1">Ornament1</label>
+    <input type="text" id="ornament1" name="ornament1" placeholder="enter b1/b2/b3/b4" required>
+    &nbsp;
+
+    <label for="lowercount">Lowercount</label>
+    <input type="text" id="lowercount1" name="lowercount1" placeholder="enter lowercount" required>
+
+    &nbsp;
+    <label for="uppercount">Uppercount</label>
+    <input type="text" id="uppercount1" name="uppercount1" placeholder="enter Uppercount" required>
+
+    <br>
+    <br>
+    <label for="grossweightlowerrange">Gross Weight Lower Range</label>
+    <input type="text" id="grossweightlowerrange1" name="grossweightlowerrange1" placeholder="enter lower range" required>
+    &nbsp;&nbsp;
+    <label for="grossweightupperrange">Gross Weight Upper Range</label>
+    <input type="text" id="grossweightupperrange1" name="grossweightupperrange1" placeholder="enter upper range" required>
+
+</div>
+
+
+    <br>
+
+    <div class="submitbutton">
+    <button type="submit">Execute</button></div>
+    </form>
+</body>
+    </html>
